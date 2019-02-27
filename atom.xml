@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>孙小鑫的心</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-02-27T09:16:35.363Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>孙小鑫</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一个小学</title>
+    <link href="http://yoursite.com/2019/02/27/%E4%B8%80%E4%B8%AA/"/>
+    <id>http://yoursite.com/2019/02/27/一个/</id>
+    <published>2019-02-27T09:10:20.000Z</published>
+    <updated>2019-02-27T09:16:35.363Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
