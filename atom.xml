@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-02-28T09:33:20.483Z</updated>
+  <updated>2019-02-28T09:40:01.923Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,12 +21,14 @@
     <link href="http://yoursite.com/2019/02/28/%E5%9B%9B%E4%B8%AA/"/>
     <id>http://yoursite.com/2019/02/28/四个/</id>
     <published>2019-02-28T09:33:20.000Z</published>
-    <updated>2019-02-28T09:33:20.483Z</updated>
+    <updated>2019-02-28T09:40:01.923Z</updated>
     
     <summary type="html">
     
     </summary>
     
+    
+      <category term="tags" scheme="http://yoursite.com/tags/tags/"/>
     
   </entry>
   
@@ -35,12 +37,14 @@
     <link href="http://yoursite.com/2019/02/28/%E4%B8%89%E4%B8%AA%E5%A5%BD%E4%BA%BA/"/>
     <id>http://yoursite.com/2019/02/28/三个好人/</id>
     <published>2019-02-28T09:32:40.000Z</published>
-    <updated>2019-02-28T09:32:40.632Z</updated>
+    <updated>2019-02-28T09:39:56.427Z</updated>
     
     <summary type="html">
     
     </summary>
     
+    
+      <category term="tags" scheme="http://yoursite.com/tags/tags/"/>
     
   </entry>
   
@@ -49,12 +53,14 @@
     <link href="http://yoursite.com/2019/02/28/%E4%B8%A4%E4%B8%AA/"/>
     <id>http://yoursite.com/2019/02/28/两个/</id>
     <published>2019-02-28T09:32:13.000Z</published>
-    <updated>2019-02-28T09:32:13.099Z</updated>
+    <updated>2019-02-28T09:39:54.019Z</updated>
     
     <summary type="html">
     
     </summary>
     
+    
+      <category term="tags" scheme="http://yoursite.com/tags/tags/"/>
     
   </entry>
   
@@ -63,14 +69,14 @@
     <link href="http://yoursite.com/2019/02/27/%E4%B8%80%E4%B8%AA/"/>
     <id>http://yoursite.com/2019/02/27/一个/</id>
     <published>2019-02-27T09:10:20.000Z</published>
-    <updated>2019-02-28T09:29:58.201Z</updated>
+    <updated>2019-02-28T09:39:59.289Z</updated>
     
     <summary type="html">
     
     </summary>
     
     
-      <category term="tag" scheme="http://yoursite.com/tags/tag/"/>
+      <category term="tags" scheme="http://yoursite.com/tags/tags/"/>
     
   </entry>
   
