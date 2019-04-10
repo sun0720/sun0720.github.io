@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-09T13:03:17.567Z</updated>
+  <updated>2019-04-10T02:49:50.072Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何在word中优雅的排版数学公式</title>
+    <link href="http://yoursite.com/2019/04/10/5/"/>
+    <id>http://yoursite.com/2019/04/10/5/</id>
+    <published>2019-04-10T02:45:55.000Z</published>
+    <updated>2019-04-10T02:49:50.072Z</updated>
+    
+    <content type="html"><![CDATA[<p>word作为文字处理软件，被众多文字处理者使用，但其实word写作者是很不友好的。word让人浪费很多的时间在排版上，却耽误了更重要的写作工作。</p><p>对于写作者，往往更喜欢用Markdown进行书写。会不会用Markdown、用不用Markdown？是判断一个写作者写作效率的重要指标。</p><p>但是，由于历史原因，word被众多编辑者所采用，我们为了与其他人进行交互协作，又不得不使用word进行文字处理工作。更为令人烦恼的是，当遇到数学公式排版时，word的弊端更是暴露无疑。</p><p>如果采用latex进行排版，只能导出pdf格式，不方便与协作者进行交互。常常面临着不得不使用word排版数学公式的问题，那么如何做到高效、优美的在word中对数学公式进行排版？</p><p>用Word打开需要排版的文件后，在word上面的菜单栏中选择——<strong>插入</strong>——<strong>符号</strong>——<strong>公式</strong>。</p><p>在自己需要插入公式的地方会出现下面这种标记公式的区域：</p><p><img src="/2019/04/10/5/1.png" alt></p><p>在这区域内，就可以优雅的编辑数学公式。其方法采用的是tex程序语言进行公式输入，其产生的数学公式就和latex一样优美。</p><p>比如：</p><p><img src="/2019/04/10/5/2.png" alt></p><p><img src="/2019/04/10/5/3.png" alt></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;word作为文字处理软件，被众多文字处理者使用，但其实word写作者是很不友好的。word让人浪费很多的时间在排版上，却耽误了更重要的写作工作。&lt;/p&gt;
+&lt;p&gt;对于写作者，往往更喜欢用Markdown进行书写。会不会用Markdown、用不用Markdown？是判断一个写作
+      
+    
+    </summary>
+    
+      <category term="software" scheme="http://yoursite.com/categories/software/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Latex 内联模式和外显模式</title>
