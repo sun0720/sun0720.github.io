@@ -92,7 +92,7 @@
 <meta property="og:image" content="http://yoursite.com/2019/04/24/9/2.png">
 <meta property="og:image" content="http://yoursite.com/2019/04/24/9/3.png">
 <meta property="og:image" content="http://yoursite.com/2019/04/24/9/4.png">
-<meta property="og:updated_time" content="2019-04-24T13:13:22.040Z">
+<meta property="og:updated_time" content="2019-04-24T13:16:45.548Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="pyspider 启动时踩过的坑及如何出坑">
 <meta name="twitter:description" content="安装pyspider:  $ pip3 install pyspider  启动pyspider:  $ pyspider   但是却出现这种情况：  问题出在哪里？首先可以仔细阅读以下报错的信息，发现有可能是wsgidav出了问题。  wsgidav发布的3.0.0版本目前仍然是测试版，相对于2.x(例如2.4.1)更改了一些用法。pyspider的3.0及以上版本在安装时，会默认安装wsgid">
@@ -353,7 +353,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  353
+                  349
                 </span>
               
 
@@ -407,7 +407,16 @@
 </blockquote>
 <p>所以调整方法有两种：</p>
 <ul>
-<li>卸载wsgidav的3.0.0版本—— &gt; $ pip3 uninstall wsgidav，安装2.4.1版本—— &gt; $ python -m pip install wsgidav==2.4.1。</li>
+<li>卸载wsgidav的3.0.0版本—— </li>
+</ul>
+<blockquote>
+<p>$ pip3 uninstall wsgidav </p>
+</blockquote>
+<p>安装2.4.1版本—— </p>
+<blockquote>
+<p>$ python -m pip install wsgidav==2.4.1</p>
+</blockquote>
+<ul>
 <li>修改配置文件，详见：<a href="https://github.com/binux/pyspider/issues/831" target="_blank" rel="noopener">Error to start webui service</a></li>
 </ul>
 <hr>
@@ -415,9 +424,19 @@
 <p><img src="/2019/04/24/9/2.png" alt></p>
 <p>这是端口出现了问题，那么如何找到端口的问题？</p>
 <p>Mac下使用lsof(list open files)来查看端口占用情况，lsof 是一个列出当前系统打开文件的工具。</p>
-<p>使用 lsof 会列举所有占用的端口列表：&gt; $ lsof</p>
-<p>也可以使用 -i 查看某个端口是否被占用，如：&gt; $ lsof -i:3000</p>
-<p>所以此处就采用：&gt; $ lsof -i:25555<br>查看25555端口的占用情况，发现</p>
+<p>使用 lsof 会列举所有占用的端口列表：</p>
+<blockquote>
+<p>$ lsof</p>
+</blockquote>
+<p>也可以使用 -i 查看某个端口是否被占用，如：</p>
+<blockquote>
+<p>$ lsof -i:3000</p>
+</blockquote>
+<p>所以此处就采用：</p>
+<blockquote>
+<p>$ lsof -i:25555 </p>
+</blockquote>
+<p>查看25555端口的占用情况，发现</p>
 <blockquote>
 <p>phantomjs 56565 crifan</p>
 </blockquote>
@@ -431,7 +450,7 @@
 <p>再次输入pyspider</p>
 <p> <img src="/2019/04/24/9/3.png" alt></p>
 <p>运行成功。</p>
-<p>在浏览器中输入：<a href="http://localhost:5000，就可以进入" target="_blank" rel="noopener">http://localhost:5000，就可以进入</a></p>
+<p>在浏览器中输入：<a href="http://localhost:5000" target="_blank" rel="noopener">http://localhost:5000</a> ，就可以进入</p>
 <p><img src="/2019/04/24/9/4.png" alt></p>
 
       
