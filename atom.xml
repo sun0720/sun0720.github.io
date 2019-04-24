@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-24T13:09:45.276Z</updated>
+  <updated>2019-04-24T13:13:22.040Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,16 +21,22 @@
     <link href="http://yoursite.com/2019/04/24/9/"/>
     <id>http://yoursite.com/2019/04/24/9/</id>
     <published>2019-04-24T13:01:34.000Z</published>
-    <updated>2019-04-24T13:09:45.276Z</updated>
+    <updated>2019-04-24T13:13:22.040Z</updated>
     
-    <content type="html"><![CDATA[<p>安装pyspider:</p><figure class="highlight plain"><figcaption><span>pip3 install pyspider</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">启动pyspider:</span><br><span class="line"></span><br><span class="line">```$ pyspider</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">但是却出现这种情况：</span><br><span class="line"></span><br><span class="line">![](1.png)</span><br><span class="line"></span><br><span class="line">问题出在哪里？首先可以仔细阅读以下报错的信息，发现有可能是**wsgidav**出了问题。</span><br><span class="line"></span><br><span class="line">&gt; wsgidav发布的3.0.0版本目前仍然是测试版，相对于2.x(例如2.4.1)更改了一些用法。pyspider的3.0及以上版本在安装时，会默认安装wsgidav的3.0.0版本。</span><br><span class="line"></span><br><span class="line">所以调整方法有两种：</span><br><span class="line"></span><br><span class="line">* 卸载wsgidav的3.0.0版本——```$ pip3 uninstall wsgidav，安装2.4.1版本——```$ python -m pip install wsgidav==2.4.1。</span><br><span class="line">* 修改配置文件，详见：[Error to start webui service](&lt;https://github.com/binux/pyspider/issues/831&gt;)</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">但是再一次输入pyspider启动时，出现下面的情况：</span><br><span class="line"></span><br><span class="line">![](2.png)</span><br><span class="line"></span><br><span class="line">这是端口出现了问题，那么如何找到端口的问题？</span><br><span class="line"></span><br><span class="line">Mac下使用lsof(list open files)来查看端口占用情况，lsof 是一个列出当前系统打开文件的工具。</span><br><span class="line"></span><br><span class="line">使用 lsof 会列举所有占用的端口列表：```$ lsof</span><br><span class="line"></span><br><span class="line">也可以使用 -i 查看某个端口是否被占用，如：```$ lsof -i:3000</span><br><span class="line"></span><br><span class="line">所以此处就采用：```$ lsof -i:25555```查看25555端口的占用情况，发现</span><br></pre></td></tr></table></figure><p>phantomjs 56565 crifan</p><p>phantomjs占用了25555端口。</p><p>用kill去掉phantomjs</p><figure class="highlight plain"><figcaption><span>kill 56565</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">注意此处是kill 56565，不是kill phantoms，没人电脑对应的kill对象都不一样。</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">再次输入```pyspider</span><br></pre></td></tr></table></figure><p> <img src="/2019/04/24/9/3.png" alt></p><p>运行成功。</p><p>在浏览器中输入：<a href="http://localhost:5000，就可以进入" target="_blank" rel="noopener">http://localhost:5000，就可以进入</a></p><p><img src="/2019/04/24/9/4.png" alt></p>]]></content>
+    <content type="html"><![CDATA[<p>安装pyspider:</p><blockquote><p>$ pip3 install pyspider</p></blockquote><p>启动pyspider:</p><blockquote><p>$ pyspider</p></blockquote><hr><p>但是却出现这种情况：</p><p><img src="/2019/04/24/9/1.png" alt></p><p>问题出在哪里？首先可以仔细阅读以下报错的信息，发现有可能是<strong>wsgidav</strong>出了问题。</p><blockquote><p>wsgidav发布的3.0.0版本目前仍然是测试版，相对于2.x(例如2.4.1)更改了一些用法。pyspider的3.0及以上版本在安装时，会默认安装wsgidav的3.0.0版本。</p></blockquote><p>所以调整方法有两种：</p><ul><li>卸载wsgidav的3.0.0版本—— &gt; $ pip3 uninstall wsgidav，安装2.4.1版本—— &gt; $ python -m pip install wsgidav==2.4.1。</li><li>修改配置文件，详见：<a href="https://github.com/binux/pyspider/issues/831" target="_blank" rel="noopener">Error to start webui service</a></li></ul><hr><p>但是再一次输入pyspider启动时，出现下面的情况：</p><p><img src="/2019/04/24/9/2.png" alt></p><p>这是端口出现了问题，那么如何找到端口的问题？</p><p>Mac下使用lsof(list open files)来查看端口占用情况，lsof 是一个列出当前系统打开文件的工具。</p><p>使用 lsof 会列举所有占用的端口列表：&gt; $ lsof</p><p>也可以使用 -i 查看某个端口是否被占用，如：&gt; $ lsof -i:3000</p><p>所以此处就采用：&gt; $ lsof -i:25555<br>查看25555端口的占用情况，发现</p><blockquote><p>phantomjs 56565 crifan</p></blockquote><p>phantomjs占用了25555端口。</p><p>用kill去掉phantomjs</p><blockquote><p>$ kill 56565</p></blockquote><p>注意此处是kill 56565，不是kill phantoms，没人电脑对应的kill对象都不一样。</p><hr><p>再次输入pyspider</p><p> <img src="/2019/04/24/9/3.png" alt></p><p>运行成功。</p><p>在浏览器中输入：<a href="http://localhost:5000，就可以进入" target="_blank" rel="noopener">http://localhost:5000，就可以进入</a></p><p><img src="/2019/04/24/9/4.png" alt></p>]]></content>
     
     <summary type="html">
     
       
       
         &lt;p&gt;安装pyspider:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;figcaption&gt;&lt;span&gt;pip3 install pyspider&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$ pip3 install pyspider&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;启动pyspider:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$ pyspider&lt;/p&gt;
+&lt;/blockquote&gt;
       
     
     </summary>
