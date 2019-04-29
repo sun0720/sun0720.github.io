@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-24T13:16:45.548Z</updated>
+  <updated>2019-04-29T03:21:25.331Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>WebUI简介及分析</title>
+    <link href="http://yoursite.com/2019/04/29/10/"/>
+    <id>http://yoursite.com/2019/04/29/10/</id>
+    <published>2019-04-29T03:19:13.000Z</published>
+    <updated>2019-04-29T03:21:25.331Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/2019/04/29/10/1.jpg" alt></p><h3 id="什么是WebUI"><a href="#什么是WebUI" class="headerlink" title="什么是WebUI"></a>什么是WebUI</h3><p>WebUI(web user interfaces)是用户用浏览器生成的网页进行输入和输出的操作。用户与Web服务器上运行的软件之间的交互。用户界面是Web浏览器以及它下载和呈现的Web页面。</p><h3 id="WebUI的优势"><a href="#WebUI的优势" class="headerlink" title="WebUI的优势"></a>WebUI的优势</h3><ol><li>如果对软件进行升级后，采用WebUI就不用实施重新进行安装和更新的操作。如果网络存在安全漏洞，只需更新一下服务器，所有人都将立即更新为新版本。使用Web浏览器界面构建产品可以节省大量时间。</li><li>不再需要验证该软件是否适用于各种硬件和操作系统。构建Web浏览器界面意味着任何硬件和操作系统组合的客户都可以访问并最大限度地利用您的软件。</li><li>不再需要担心图形用户界面（GUI）与服务器之间的兼容性，这意味着您可以更新到软件的新版本，而不用担心它是否与您的服务器兼容。Web浏览器界面意味着不再担心GUI的第2版是否可以与服务器的第3版一起使用。</li></ol><hr><p>当您使用Web浏览器UI处理软件时，可以轻松地为与您的工作相关的页面添加书签。如果您找到一组特定的设置或适合您项目的标签，您可以将它们加入书签并在以后使用它们，从而使您的时间表和项目受益。同样，在Web浏览器中工作意味着您可以与同事共享链接。</p><p>您可能更喜欢浏览网页并同时打开多个标签。在使用Web浏览器UI的作业调度软件方面，这意味着您可以在一个屏幕上打开作业历史记录，并在另一个屏幕上编辑批处理作业，同时在预测之间来回切换。这使您可以轻松地同时考虑作业计划的不同方面，这样您就可以更聪明地工作，提高效率。</p><hr><p>总之，构建基于Web的软件产品意味着您的大多数用户将完全习惯于浏览Web浏览器，并且他们将比基于GUI的产品更快地启动和运行您的产品。最终，基于Web的产品允许您更快地生成软件，并以更快的速度向客户提供新功能和版本。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/2019/04/29/10/1.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;h3 id=&quot;什么是WebUI&quot;&gt;&lt;a href=&quot;#什么是WebUI&quot; class=&quot;headerlink&quot; title=&quot;什么是WebUI&quot;&gt;&lt;/a&gt;什么是WebUI&lt;/h3&gt;&lt;p&gt;We
+      
+    
+    </summary>
+    
+      <category term="program" scheme="http://yoursite.com/categories/program/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>pyspider 启动时踩过的坑及如何出坑</title>
