@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-29T03:21:25.331Z</updated>
+  <updated>2019-05-01T03:33:47.899Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何处理word背景页消失的情况？</title>
+    <link href="http://yoursite.com/2019/05/01/11/"/>
+    <id>http://yoursite.com/2019/05/01/11/</id>
+    <published>2019-05-01T03:31:21.000Z</published>
+    <updated>2019-05-01T03:33:47.899Z</updated>
+    
+    <content type="html"><![CDATA[<p>用word软件进行文字排版，在正常情况下，打开word后，会出现中间一块白色的排版面和两侧的灰色地。白色页面整体放在了灰色面板上进行的排版，如下图：</p><p><img src="/2019/05/01/11/1.png" alt></p><p>但是偶尔会碰到这样的情况：打开word文档，看不到两侧的灰色，全是白色面，当你伸缩word页面是，每行的排版字数也跟着伸缩，也就是说你排版的段落等会随着伸缩而改变。如下图，打开之后，就是整个白面板</p><p><img src="/2019/05/01/11/2.png" alt></p><hr><p>那么，如何让消失的灰色面板显示出来呢？</p><ol><li>菜单栏找到：<strong>布局——栏——二栏</strong>，只需找到”栏”这个项，再点即一栏、二栏或多栏都可以，灰色面板就会再出现。</li><li>通过：<strong>格式——栏…</strong>，这样的选项依然可以。</li></ol><hr><p>但当关闭word，再次重现打开后，依然出现原先的情况。问题并没有得到根本的解决，为什么会出现这样的情况？如何改变word的整个设置？思路就是要改变word的<strong>全局设置</strong>，从根本上解决问题。</p><p>全局设置就要找到word软件的全局菜单栏，一般都在屏幕的最上方，左上角或右上角。</p><p><img src="/2019/05/01/11/3.png" alt></p><p><strong>点击word选项——偏好设置</strong>，出现下图的选项界面：</p><p><img src="/2019/05/01/11/4.png" alt></p><p>就可以根据自己的需要尽心全局设置。比如视图的全局设置如下：</p><p><img src="/2019/05/01/11/5.png" alt></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;用word软件进行文字排版，在正常情况下，打开word后，会出现中间一块白色的排版面和两侧的灰色地。白色页面整体放在了灰色面板上进行的排版，如下图：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2019/05/01/11/1.png&quot; alt&gt;&lt;/p&gt;
+&lt;p&gt;但是偶尔会碰到这样的情
+      
+    
+    </summary>
+    
+      <category term="software" scheme="http://yoursite.com/categories/software/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>WebUI简介及分析</title>
