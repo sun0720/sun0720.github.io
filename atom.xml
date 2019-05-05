@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-05-04T12:52:21.480Z</updated>
+  <updated>2019-05-05T10:01:33.003Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SSH详解及与GitHub的应用</title>
+    <link href="http://yoursite.com/2019/05/05/13/"/>
+    <id>http://yoursite.com/2019/05/05/13/</id>
+    <published>2019-05-05T09:57:27.000Z</published>
+    <updated>2019-05-05T10:01:33.003Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1-SSH历史"><a href="#1-SSH历史" class="headerlink" title="1. SSH历史"></a>1. SSH历史</h3><p>1995年，芬兰赫尔辛基理工大学的研究员TatuYlönen设计了第一个版本的SSH协议，这个版本是在他的大学网络中通过密码嗅探攻击引起的。SSH的目标是取代早期的rlogin，TELNET，FTP和rsh协议，这些协议不提供强认证，也不保证机密性。Ylönen于1995年7月发布了他作为免费软件的实现，该工具迅速普及。到1995年底，SSH用户群已经扩展到50个国家的20,000名用户。目前，在Linux系统上，SSH已成标准配置。</p><h3 id="2-SSH是什么？"><a href="#2-SSH是什么？" class="headerlink" title="2. SSH是什么？"></a>2. SSH是什么？</h3><p>维基百科上的定义是：</p><blockquote><p>SSH(Secure Shell) uses public-key cryptography to authenticate the remote computer and allow it to authenticate the user.</p></blockquote><p>直译过来就是：</p><blockquote><p>SSH采用公钥加密来验证远程计算机，并允许它对用户进行身份验证。</p></blockquote><p>SSH是一种加密网络协议，允许用户通过不安全的网络安全地执行许多网络服务。典型应用包括<strong>远程命令行登录</strong>和<strong>远程命令执行</strong>，但可以使用SSH保护任何网络服务。</p><p>SSH在客户端—服务器体系结构中提供了安全通道，将SSH客户端应用程序与SSH服务器连接。</p><h3 id="3-SSH密钥是什么？"><a href="#3-SSH密钥是什么？" class="headerlink" title="3. SSH密钥是什么？"></a>3. SSH密钥是什么？</h3><p>SSH密钥总是成对出现的，由私钥和公钥组成。不同于密码方式的登录，SSH密钥提供了更安全的方式来登录SSH服务器。虽然暴力破解常常能够破解密码，但SSH密钥几乎不可能通过暴力破解。生成一对密钥提供两个长字符串：公钥和私钥。您可以将公钥放在任何服务器上，然后通过将其连接到已拥有私钥的客户端来解锁。当两者合适时，系统打开而无需密码。您可以使用访问密码保护您的私钥，从而进一步提高安全性。</p><h3 id="4-通过SSH连接到GitHub"><a href="#4-通过SSH连接到GitHub" class="headerlink" title="4.通过SSH连接到GitHub"></a>4.通过SSH连接到GitHub</h3><p>使用SSH协议，您可以连接和验证远程服务器和服务。使用SSH密钥，您可以在每次访问时无需提供用户名或密码即可连接到GitHub。</p><ul><li><p>首先需要检查客户端上是否存在SSH密钥</p><p>打开终端——输入<code>ls -al ~/.ssh</code>，可以查看已经存在的SSH密钥。公钥具有以下一种文件名：</p><blockquote><ul><li><em>id_dsa.pub</em></li><li><em>id_ecdsa.pub</em></li><li><em>id_ed25519.pub</em></li><li><em>id_rsa.pub</em></li></ul></blockquote></li><li><p>如果没有，需要自己创建，输入<code>ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</code></p><p>根据提示，你需要输入一个安全密码：</p><blockquote><p>Enter passphrase (empty for no passphrase): [Type a passphrase]<br>Enter same passphrase again: [Type passphrase again]</p></blockquote></li></ul><ul><li><p>将SSH密钥加入你的GitHub账户中</p><p>首先，复制你的密钥<code>pbcopy &lt; ~/.ssh/id_rsa.pub</code>，登录GitHub，点击右上角的头像图标：</p></li></ul><p><img src="/2019/05/05/13/1.png" alt></p><p> 点击settings，再点击左侧栏里面的<strong>SSH and  GPG keys</strong>：</p><p><img src="/2019/05/05/13/2.png" alt></p><p>继续点击：<img src="/2019/05/05/13/3.png" alt></p><p>会出现：<img src="/2019/05/05/13/4.png" alt></p><p>输入刚才copy的密钥即可。Title任意设定。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;1-SSH历史&quot;&gt;&lt;a href=&quot;#1-SSH历史&quot; class=&quot;headerlink&quot; title=&quot;1. SSH历史&quot;&gt;&lt;/a&gt;1. SSH历史&lt;/h3&gt;&lt;p&gt;1995年，芬兰赫尔辛基理工大学的研究员TatuYlönen设计了第一个版本的SSH协议，这个版
+      
+    
+    </summary>
+    
+      <category term="program" scheme="http://yoursite.com/categories/program/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Python中，print和return的区别</title>
