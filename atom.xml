@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-05-05T10:01:33.003Z</updated>
+  <updated>2019-05-07T13:04:40.023Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ChromeDriver安装过程详解</title>
+    <link href="http://yoursite.com/2019/05/07/14/"/>
+    <id>http://yoursite.com/2019/05/07/14/</id>
+    <published>2019-05-07T13:00:51.000Z</published>
+    <updated>2019-05-07T13:04:40.023Z</updated>
+    
+    <content type="html"><![CDATA[<p>ChromeDriver是控制软件(eg: selenium)和Chrome之间的桥梁，通过ChromeDriver可以实现对Chrome浏览器的控制。</p><hr><p>安装ChromeDriver的方法主要有两种：<strong>手动下载和命令行</strong>。</p><p>此处推荐手动，命令行容易出现问题。</p><ol><li><p>首先进入ChromeDriver的官网——<a href="https://sites.google.com/a/chromium.org/chromedriver/downloads" target="_blank" rel="noopener">WebDriver for Chrome</a> 进行下载。此处应注意：<strong>选择与自己Chrome浏览器相对应的版本</strong>，否则ChromeDriver将无法驱动Chrome浏览器。</p><p>那么，如何查看自己的Chrome版本，打开浏览器，点击右上角的<strong>三个点——帮助(E)——关于Chrome Google(G)</strong></p></li></ol><p><img src="/2019/05/07/14/1.png" alt></p><ol start="2"><li>下载完对应的Chromedriver之后，得到一个文件<code>chromedriver</code>。</li><li><ul><li>打开终端，进入chromedriver当前所在的文件目录，采用命令：<code>mv chromedriver /usr/local/bin</code>，将自己下载的chromedriver移到这个目录下就可以了。注意：<strong>即便自己有其他版本的chromedriver，也没关系。新加入的chromedriver可以之间覆盖</strong>。</li><li>如果不通过终端，也可以通过访达(finder)，打开finder。在屏幕左上方找到<strong>前往——前往文件夹…</strong></li></ul></li></ol><p><img src="/2019/05/07/14/2.png" alt></p><p>出现一个搜索窗口——输入：<code>/usr/local/bin</code>。</p><p><img src="/2019/05/07/14/3.png" alt></p><p>点击<strong>前往</strong>，进入这个文件夹。然后将自己下载的chromedriver，复制或者拖拽进这个文件内即可。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;ChromeDriver是控制软件(eg: selenium)和Chrome之间的桥梁，通过ChromeDriver可以实现对Chrome浏览器的控制。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;安装ChromeDriver的方法主要有两种：&lt;strong&gt;手动下载和命令行&lt;/strong&gt;
+      
+    
+    </summary>
+    
+      <category term="program" scheme="http://yoursite.com/categories/program/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>SSH详解及与GitHub的应用</title>
