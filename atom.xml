@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-05-07T13:04:40.023Z</updated>
+  <updated>2019-05-16T11:39:41.227Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MAC系统下，Mysql的安装启动及连接</title>
+    <link href="http://yoursite.com/2019/05/16/15/"/>
+    <id>http://yoursite.com/2019/05/16/15/</id>
+    <published>2019-05-16T11:34:43.000Z</published>
+    <updated>2019-05-16T11:39:41.227Z</updated>
+    
+    <content type="html"><![CDATA[<p>Mysql的安装可以通过两种方法：</p><ul><li>命令行(<strong>极为不推荐，会遇见许多坑</strong>)</li><li>官网安装包下载(<strong>推荐，成功率高</strong>)</li></ul><hr><p>下面就主要以官网安装包方法进行安装：</p><p>进入<a href="https://dev.mysql.com/downloads/mysql/" target="_blank" rel="noopener">官网</a> ，选择<strong>DOWNLOADS</strong>——<strong>MySQL Community Server</strong>，点击下图的<strong>Download</strong>按钮进行安装包(.dmg)的下载。</p><p><img src="/2019/05/16/15/1.png" alt></p><p>下载之后，点击进行安装，不断点击<strong>继续</strong>按钮即可。此版本8.0.16的mysql已经可以自己设置root账户的密码了。不像旧版本的mysql系统自己生成密码，需要自己记住并保存密码，然而生成的密码常常是不容易记忆的。最新版本的Mysql已经做了更加人性化的改变。</p><p>之后就直接出现了这样的界面：</p><p><img src="/2019/05/16/15/2.png" alt></p><p>Mysql直接处于启动状态，如果你想关闭可以点击——<strong>Stop MySQL Server</strong>。</p><p>到此，MySQL的安装和启动就已经完成。</p><hr><p>如果想再次启动，先找到<strong>系统偏好设置</strong>。</p><p><img src="/2019/05/16/15/3.png" alt></p><p>在最下方能够找到Mysql：</p><p><img src="/2019/05/16/15/4.png" alt></p><p>点击即可进入——选择<strong>Start MySQL Server</strong>，即可启动。</p><hr><p>启动完MySQL之后，下面就可以连接MySQL了。</p><p>进入终端输入：<code>$ mysql -u root -p</code></p><p><img src="/2019/05/16/15/5.png" alt></p><p>提示输入密码，输入自己设置的密码即可：</p><p><img src="/2019/05/16/15/6.png" alt></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Mysql的安装可以通过两种方法：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;命令行(&lt;strong&gt;极为不推荐，会遇见许多坑&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;官网安装包下载(&lt;strong&gt;推荐，成功率高&lt;/strong&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;下面就主要以官网安
+      
+    
+    </summary>
+    
+      <category term="program" scheme="http://yoursite.com/categories/program/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>ChromeDriver安装过程详解</title>
