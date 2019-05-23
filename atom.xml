@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-05-16T11:39:41.227Z</updated>
+  <updated>2019-05-23T03:41:37.293Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何在word中使用latex语言优雅的编辑数学公式？</title>
+    <link href="http://yoursite.com/2019/05/23/16/"/>
+    <id>http://yoursite.com/2019/05/23/16/</id>
+    <published>2019-05-23T03:38:50.000Z</published>
+    <updated>2019-05-23T03:41:37.293Z</updated>
+    
+    <content type="html"><![CDATA[<p>word是一款常用的软件，但是，其书写一些数学公式时，却不太友好。</p><p>对数学公式比较友好的排版语言是tex。</p><p>那么，我们如何在word中运用latex语言，对数学公式进行优雅、简洁、高效的排版工作呢？</p><hr><p>首先打开word，找到菜单栏的<strong>插入</strong>选项：</p><p><img src="/2019/05/23/16/1.png" alt></p><p>点击<strong>插入</strong>选项后，在下面的一栏菜单栏的右边，找到<strong>公式</strong>菜单：</p><p><img src="/2019/05/23/16/2.png" alt></p><p>点击<strong>公式</strong>后，菜单栏就会转换成下面的内容：</p><p><img src="/2019/05/23/16/3.png" alt></p><p>同时，word内会出现一个公式的编辑框：</p><p><img src="/2019/05/23/16/4.png" alt></p><hr><p>那么，如何使用latex语言，在公式编辑框内进行数学公式的编辑呢？在<strong>公式</strong>的菜单栏下，在菜单栏的最左边，找到<strong>{}Latex</strong>，点击即可：</p><p><img src="/2019/05/23/16/5.png" alt></p><p>这样，在公式编辑框内就可以使用latex语言进行编辑了，编辑完之后，点击return，就可以出现优雅、简洁的数学公式了：</p><p><img src="/2019/05/23/16/6.png" alt></p><p><img src="/2019/05/23/16/7.png" alt></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;word是一款常用的软件，但是，其书写一些数学公式时，却不太友好。&lt;/p&gt;
+&lt;p&gt;对数学公式比较友好的排版语言是tex。&lt;/p&gt;
+&lt;p&gt;那么，我们如何在word中运用latex语言，对数学公式进行优雅、简洁、高效的排版工作呢？&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;首先打开word，找到
+      
+    
+    </summary>
+    
+      <category term="software" scheme="http://yoursite.com/categories/software/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>MAC系统下，Mysql的安装启动及连接</title>
